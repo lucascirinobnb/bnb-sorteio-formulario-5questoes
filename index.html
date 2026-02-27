@@ -6,6 +6,31 @@
   <meta name="theme-color" content="#A6173D" />
   <title>Banco do Nordeste Investimentos | Formulário</title>
 
+  <!-- ========================= -->
+  <!--        PWA CONFIG         -->
+  <!-- ========================= -->
+
+  <!-- Manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Ícones em Base64 do aplicativo -->
+  <link rel="icon" type="image/png" sizes="192x192"
+        href="data:image/png;base64,AQUI_BASE64_192">
+
+  <link rel="icon" type="image/png" sizes="512x512"
+        href="data:image/png;base64,AQUI_BASE64_512">
+
+  <!-- Service Worker -->
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js");
+    }
+  </script>
+
+  <!-- ========================= -->
+  <!--    SEU CÓDIGO ORIGINAL    -->
+  <!-- ========================= -->
+
   <style>
     :root{
       --bn-primary:#A6173D;
@@ -53,7 +78,6 @@
       backdrop-filter:blur(10px);
     }
 
-    /* LOGO GRANDE — PROTAGONISTA */
     header{
       display:flex;
       justify-content:center;
@@ -67,7 +91,6 @@
       display:block;
     }
 
-    /* TELA */
     .screen{
       display:none;
       flex-direction:column;
@@ -107,7 +130,6 @@
     }
     button:active{transform:scale(.97);}
 
-    /* BLOCO DO FORMULÁRIO — CENTRALIZADO */
     .formHighlight{
       width:min(720px,92vw);
       padding:20px;
@@ -165,7 +187,6 @@
       background:linear-gradient(90deg,var(--bn-primary),var(--bn-secondary));
       transition:width .08s linear;
     }
-
   </style>
 </head>
 
