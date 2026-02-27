@@ -1,0 +1,22 @@
+{
+  "name": "Sorteador BNB",
+  "short_name": "Sorteio BNB",
+  "start_url": "/bnb-sorteio-formulario-5questoes/",
+  "scope": "/bnb-sorteio-formulario-5questoes/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#A6173D",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
